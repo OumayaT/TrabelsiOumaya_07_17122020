@@ -47,30 +47,3 @@
     }
   }
 </script>
-
-<style lang="scss">
-.form {
-  margin-bottom: 50px;
-}
-
-.form-div {
-  .confirmPassword {
-    display: inline;
-    margin-top: 10px;
-  }
-  .validate {
-    cursor: pointer;
-  }
-}
-
-.error {
-  font-size: 0.85rem;
-}
-
-.info {
-  font-size: 0.75rem;
-  font-style: italic;
-  width: 30%;
-  margin: 10px auto;
-}
-</style>

@@ -12,7 +12,9 @@
 <style lang="scss">
 
 body{
-  background-color: cadetblue;
+  background-color: #192f01;
+ 
+
 }
 
 #nav{
@@ -21,7 +23,9 @@ body{
   margin: 20px;
   a{
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 8px;
+    color: #192f01;
+    font-weight: bold;
   }
 }
 </style>
