@@ -15,4 +15,7 @@ router.post('/', auth, articlesCtrl.createArticle);
 router.put('/', auth, articlesCtrl.updateArticle);
 router.delete('/', auth, articlesCtrl.deleteArticle);
 
+
+
+
 module.exports = router;

@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <p>Bonjour {{ user.pseudo }}, vous êtes désormais connecté.<br>Vous pouvez dès à présent vous rendre sur le forum afin d'échanger avec vos collègues en toute convivialité !</p>
+  <div class="home-user">
+    <p >Bonjour <span>{{ user.pseudo }} ! </span><br>
+    Vous êtes désormais connecté.<br>
+    Vous pouvez dès à présent vous rendre sur le forum afin d'échanger avec vos collègues en toute convivialité !</p>
     <button @click="disconnectUser" class="button">Déconnexion</button>
-    <button @click="getDeleteRequest" class="button">Supprimer mon compte</button>
+    <button  @click="getDeleteRequest" class="button-delete">Supprimer mon compte</button>
     <div v-if="deleteQuery">
       <form class="form">
         <div class="form-div">
@@ -18,7 +20,7 @@
 
 <script>
   import { mapActions } from 'vuex'; 
-
+  
   export default {
     name: 'Dashboard',
     props: {
@@ -43,3 +45,32 @@
     }
   }
 </script>
+
+<style lang="scss">
+.home-user{
+  font-size: x-large;
+  text-align: center;
+  font-weight: medium;
+  margin: auto;
+  max-width: 600px;
+  padding: 30px;
+
+  button {
+    color:  #e0475b;
+    background-color: #ded369;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: medium;
+    font-weight: bold ;
+    width: 200px;
+    margin: 20px;
+    border: none;
+  }
+
+  .button-delete{
+    background-color: black;
+    color :red;
+  }
+}
+
+</style>

@@ -7,6 +7,7 @@ const Article = sequelize.define('Article', {
         type: DataTypes.STRING,
         allowNull: false
     },
+    
     content: {
         type: DataTypes.TEXT,
         allowNull: false
@@ -22,6 +23,7 @@ const Article = sequelize.define('Article', {
         type: DataTypes.STRING
     }
 });
+ 
 
 // Création de la table 'articles'
 Article.sync()
