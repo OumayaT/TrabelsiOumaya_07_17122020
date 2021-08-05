@@ -59,7 +59,7 @@
     color:  #e0475b;
     background-color: #ded369;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     font-size: medium;
     font-weight: bold ;
     width: 200px;
@@ -69,7 +69,13 @@
 
   .button-delete{
     background-color: black;
-    color :red;
+    color: red;
+    box-shadow: 2px 2px 2px red;
+     &:hover{
+        box-shadow: 5px 5px 5px red;
+        transform: translateY(2px);
+      
+      }
   }
 }
 

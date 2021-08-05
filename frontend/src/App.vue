@@ -13,8 +13,6 @@
 
 body{
   background-color: #192f01;
- 
-
 }
 
 #nav{

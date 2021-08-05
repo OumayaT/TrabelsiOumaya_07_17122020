@@ -9,7 +9,7 @@
         Vous pourrez créer et vous connecter à votre compte grâce à la section </p>
       <router-link to="/account"> Accéder à l'application</router-link>
       <p class="texteAccueil">
-        Nous vous souhaitons une bonne navigation sur votre nouvelle application
+        Nous vous souhaitons une bonne navigation sur votre nouvelle application<br>
         Groupomania !
       </p>
     </main>
@@ -56,36 +56,37 @@ header {
 main,
 footer {
   text-align: center;
+  
+  
+  font-style: italic;
+  color: #192f01;
   h1 {
     font-size: 1.7rem;
     margin: 25px 0;
   }
    a {
-    color:  #DED369;
-    background-color: #192f01;
+    color: black;
     border-radius: 5px;
     text-decoration: none;
-    padding: 5px;
+    font-weight: bold;
+    padding: 8px;
     font-size: x-large;
+    background: linear-gradient(to bottom right,#192f01, 30%,#ded369,);
+    box-shadow: 2px 2px 2px #192f01;
+    &:hover{
+        box-shadow: 5px 5px 5px #192f01;
+      }
     
-    &:hover {
-      font-weight: 700;
-    }
+
   }
 }
 
 
 .texteAccueil {
   text-align: center;
-  margin: 20px 0;;
+  margin: 30px 0;;
 
 }
 
-.footer {
-  font-weight: 400;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-style: italic;
-  color: #192f01;
-}
+
 </style>

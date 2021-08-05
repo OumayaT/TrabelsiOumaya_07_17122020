@@ -12,12 +12,14 @@
         <h1 class="sharedArticle_title" @click="getArticle(item.sharedArticleId)"><img src="../../assets/share-icon.png" alt="Logo de partage d'articles" class="sharedArticle_title--img">{{ item.sharedArticleTitle }}</h1>
       </div>
       <p v-for="(paragraph, index) in item.content" :key="index" class="article-txt">{{ paragraph }} <span v-if="item.content !== item.fullContent && index === (item.content.length - 1)" class="readMore" @click="getArticle(item.id)">Lire la suite</span></p>
-      <button class="button" @click="showComments(item)">Voir les commentaires</button>
-      <button class="button" @click="share(item)">Partager</button>
-      <button v-if="item.author === user.pseudo" class="button" @click="editArticle(item)">Modifier</button>
-      <button v-else-if="item.author !== user.pseudo && user.admin" class="btnAdmin" @click="editArticle(item)">Modérer</button>
-      <button v-if="item.author === user.pseudo" class="button" @click="deleteArticle(item)">Supprimer</button>
-      <button v-else-if="item.author !== user.pseudo && user.admin" class="btnAdmin" @click="deleteArticle(item)">Supprimer l'article</button>
+        <div class="reaction">
+        <button @click="showComments(item)">Voir les commentaires</button>
+        <button @click="share(item)">Partager</button>
+        <button v-if="item.author === user.pseudo" @click="editArticle(item)">Modifier</button>
+        <button v-else-if="item.author !== user.pseudo && user.admin" class="btnAdmin" @click="editArticle(item)">Modérer</button>
+        <button v-if="item.author === user.pseudo" @click="deleteArticle(item)">Supprimer</button>
+        <button v-else-if="item.author !== user.pseudo && user.admin" class="btnAdmin" @click="deleteArticle(item)">Supprimer l'article</button>
+        </div>
       <ShowComments
         :user="user"
         :article="item"
@@ -55,3 +57,42 @@
     }
   }
 </script>
+
+<style lang="scss">
+.articles{
+  text-align: justify;
+  background-color: white;
+  box-shadow: -3px 2px 5px  grey;
+  padding: 10px;
+  margin: 20px 0;
+  h1{
+    color: #192f01;
+    font-size: 25px;
+    border-bottom: 2px solid #192f01;
+  }
+ em{
+   color:#03224c;
+   font-size: small;
+ }
+}
+
+.reaction{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  
+  button{
+    border: none;
+    background-color: white;
+    color: blue;
+    border-top: 3px solid #F2F2F2;
+    padding: 5px;
+    &:hover{
+      border-top: 3px solid #192f01;
+      color:#192f01 ;
+    }
+  }
+
+}
+</style>

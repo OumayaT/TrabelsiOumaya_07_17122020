@@ -54,13 +54,21 @@
     font-size: large;
   }
   button {
-    color:  #e0475b;
-    background-color: #ded369;
     border-radius: 5px;
-    padding: 5px;
+    border: none;
+    padding: 7px;
     font-size: large;
+    font-weight: bold;
     width: 150px;
     margin: 20px;
+    box-shadow: 2px 2px 2px #192f01;
+    background: linear-gradient(to bottom right, #ded369,80%, #192f01);
+    &:hover{
+        box-shadow: 5px 5px 5px #192f01;
+        transform: translateY(2px);
+        color:#192f01;
+      
+      }
   }
 }
 form {
@@ -74,16 +82,21 @@ form {
   flex-direction: column;
 
   .submit {
-    color:  #DED369;
-    background-color: #192f01;
+    border: none;
     border-radius: 5px;
     padding: 7px;
     font-size: large;
+     font-weight: bold;
     width: 150px;
     margin: auto;
-     &:hover {
-      font-weight: 700;
-    }
+    box-shadow: 2px 2px 2px #192f01;
+    background: linear-gradient(to bottom right,#192f01, 80%,#ded369,);
+    &:hover{
+        box-shadow: 5px 5px 5px #192f01;
+        transform: translateY(2px);
+        color:  #ded369;
+      
+      }
   
   }
 }

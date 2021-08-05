@@ -1,8 +1,10 @@
 <template>
   <div class="forum">
     <div v-if="main">
-      <p>Bienvenue sur le Forum ! Ici, vous pouvez écrire et/ou partager avec vos collègues des articles sur des sujets qui vous intéressent.</p>
-      <p class="get-charter">NB : Avant de participer, merci de lire la <span class="get-charter--link" @click="getCharter">charte</span> indiquant les règles de convivialité à respecter.</p>
+      <h1>Bienvenue sur le Forum ! </h1>
+      <p> Partager avec vos collègues des articles sur des sujets qui vous intéressent.</p>
+      <p class="get-charter">NB : Avant de participer, merci de lire la <span class="get-charter--link" @click="getCharter">Charte</span> <br>
+      indiquant les règles de convivialité à respecter.</p>
       <button class="forum-btn" @click="newArticle">Publier un article</button>
       <button class="forum-btn" @click="showUserArticles">Mes articles</button>
       <button class="forum-btn" @click="readLatestArticles">Articles récents</button>
@@ -90,71 +92,37 @@
 </script>
 
 <style lang="scss">
-.get-charter {
+.forum{
+ max-width: 500px;
+  margin: auto;
+  font-size: large;
+  text-align: center;
+}
+
+.get-charter{
+  font-size: smaller;
   font-style: italic;
-  &--link {
-    font-weight: 500;
-    text-decoration: underline;
-    &:hover {
-      font-weight: 700;
-      cursor: pointer;
-    }
+ .get-charter--link{
+   font-weight: bold;
+ }
+}
+
+.forum-btn{
+ width: 180px;
+ margin: 10px;
+ padding: 5px;
+ border: none;
+ border-radius: 10px;
+ background: linear-gradient(to bottom right,#192f01, #ded369);
+ font-weight: bolder;
+ box-shadow: 2px 2px 2px #192f01;
+  &:hover{
+    box-shadow: 5px 5px 5px #192f01;
+    transform: translateY(2px);
+  
   }
 }
 
-.charter {
-  text-align: justify;
-  &--title {
-    text-align: center;
-  }
-  &--list {
-    padding-left: 15px;
-  }
-}
 
-.forum-btn {
-  font-size: 1rem;
-  margin: 10px 20px;
-  cursor: pointer;
-}
 
-.btnAdmin {
-  font-size: 0.85rem;
-  margin: 10px 20px;
-  cursor: pointer;
-  background: #ee0700;
-}
-
-.sharedArticle {
-  &_title {
-    font-size: 1rem;
-    cursor: pointer;
-    &--img {
-      margin-right: 10px;
-      -webkit-transform: translateY(20%);
-              transform: translateY(20%);
-    }
-  }
-}
-
-.articles {
-  margin: 40px;
-}
-
-.article-txt, .comment-txt {
-  font-weight: 400;
-  text-align: justify;
-  .readMore {
-    font-weight: 500;
-    text-decoration: underline;
-    &:hover {
-      font-weight: 700;
-      cursor: pointer;
-    }
-  }
-}
-
-.comment-txt {
-  margin: 0px;
-}
 </style>
