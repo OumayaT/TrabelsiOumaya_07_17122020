@@ -31,8 +31,7 @@
           <button
             v-if="item.author === user.pseudo"
             class="button"
-            @click="editComment(item), newComment(article)"
-          >
+            @click="editComment(item), newComment(article)">
             Modifier
           </button>
           <button
@@ -45,24 +44,22 @@
           <button
             v-if="item.author === user.pseudo"
             class="button"
-            @click="deleteComment(item)"
-          >
+            @click="deleteComment(item)">
             Supprimer
           </button>
           <button
             v-else-if="user.admin"
             class="btnAdmin"
-            @click="deleteComment(item)"
-          >
+            @click="deleteComment(item)">
             Supprimer le commentaire
           </button>
           <button class="button" @click="newComment(article)">Commenter</button>
         </div>
       </div>
     </div>
-    <div v-if="article.noComment">
+    <div v-if="article.noComment" class="add-comment" >
       <p>Aucun commentaire</p>
-      <button class="button" @click="newComment(article)">
+      <button  @click="newComment(article)">
         Ajouter un commentaire
       </button>
     </div>
@@ -176,14 +173,30 @@ export default {
   font-size: small;
   color: #192f01;
 }
-
+.add-comment {
+  text-align: center;
+  p{
+      color: #192f01;
+  }
+  button{
+    border: none;
+    background-color: white;
+    color: grey;
+    border-top: 3px solid #f2f2f2;
+    padding: 5px;
+    &:hover {
+      border-top: 3px solid #192f01;
+      color: #192f01;
+    }
+  }
+}
 .manag_comment {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  button {
+  button{
     border: none;
-    background-color: white;
+    background-color : white;
     color: grey;
     border-top: 3px solid #f2f2f2;
     padding: 5px;

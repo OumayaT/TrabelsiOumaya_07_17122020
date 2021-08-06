@@ -2,8 +2,8 @@
   <div class="home-user">
     <p >Bonjour <span>{{ user.pseudo }} ! </span><br>
     Vous êtes désormais connecté.<br>
-    Vous pouvez dès à présent vous rendre sur le forum afin d'échanger avec vos collègues en toute convivialité !</p>
-    <button @click="disconnectUser" class="button">Déconnexion</button>
+    Vous pouvez dès à présent vous rendre sur le <span>Forum</span> afin d'échanger avec vos collègues en toute convivialité !</p>
+    <button @click="disconnectUser" class="btn-logout">Déconnexion</button>
     <button  @click="getDeleteRequest" class="button-delete">Supprimer mon compte</button>
     <div v-if="deleteQuery">
       <form class="form">
@@ -47,6 +47,7 @@
 </script>
 
 <style lang="scss">
+
 .home-user{
   font-size: x-large;
   text-align: center;
@@ -54,10 +55,7 @@
   margin: auto;
   max-width: 600px;
   padding: 30px;
-
-  button {
-    color:  #e0475b;
-    background-color: #ded369;
+  button{
     border-radius: 5px;
     padding: 10px;
     font-size: medium;
@@ -66,6 +64,8 @@
     margin: 20px;
     border: none;
   }
+
+ }
 
   .button-delete{
     background-color: black;
@@ -77,6 +77,13 @@
       
       }
   }
-}
-
+ .btn-logout {
+    
+    background: linear-gradient(to bottom right, #e0475b, 80%, #ded369);
+    box-shadow: 2px 2px 2px #192f01;
+    &:hover {
+      box-shadow: 5px 5px 5px #e0475b;
+      transform: translateY(2px);
+    }
+ }
 </style>
