@@ -37,7 +37,7 @@ exports.signup = (req, res) => {
                         .then(user => {
                             res.status(201).json({
                                 pseudo: user.pseudo,
-                                token: jwt.sign({ userId: user.id }, 'Gq8SZFSVIehzomW9QSjRUZ7Vlc5ykogXJMebbe3M', { expiresIn: '24h' })
+                                token: jwt.sign({ userId: user.id }, process.env.TOKEN_SECRET, { expiresIn: '24h' })
                             });
                         })
                         .catch(error => res.status(400).json({ error }));
@@ -69,7 +69,7 @@ exports.login = (req, res) => {
                                 res.status(200).json({ 
                                     pseudo: user.pseudo,
                                     admin: user.admin,
-                                    token: jwt.sign({ userId: user.id }, 'Gq8SZFSVIehzomW9QSjRUZ7Vlc5ykogXJMebbe3M', { expiresIn: '24h' }) 
+                                    token: jwt.sign({ userId: user.id }, process.env.TOKEN_SECRET, { expiresIn: '24h' }) 
                                 });
                             }
                         })
