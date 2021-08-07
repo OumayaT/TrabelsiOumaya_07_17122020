@@ -23,14 +23,14 @@ si le navigateur ne s'ouvre pas automatiquement allez à :
 DANS LE DOSSIER BACKEND
 Ouvrez le fichier " .env.initial " : vous devez assigner des valeurs aux 3 variables suivantes:
 ### DB_NAME =   ###
- ### USER =    ###
- ###  PASSWORD =  ###
+### USER =    ###
+### PASSWORD =  ###
+### TOKEN_SECRET = ###
 
 
-DB_USER:  nom de votre base de données. 
-
-DB_PASS: votre mot de passe pour votre base de données.
-
+DB_NAME:  nom de votre base de données. 
+USER: nom d'utilisateur
+PASSWORD : mot de passe utilisateur
 TKN_SECRET = variable de votre choix.
 
 Renommer ce dossier " .env " à la place de " .env.initial ".
