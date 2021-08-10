@@ -12,11 +12,7 @@
       </div>
       <div v-if="addSharedArticle" class="sharedArticle">
         <h1 class="sharedArticle_title">
-          <img
-            src="../../assets/share-icon.png"
-            alt="Logo de partage d'articles"
-            class="sharedArticle_title--img"
-          />{{ sharedArticle.title }}
+          
         </h1>
       </div>
       <div class="form-div">

@@ -56,8 +56,6 @@ header {
 main,
 footer {
   text-align: center;
-  
-  
   font-style: italic;
   color: #192f01;
   h1 {

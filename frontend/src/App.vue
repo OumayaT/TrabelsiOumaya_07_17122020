@@ -19,7 +19,7 @@ body{
   display: flex;
   justify-content: center;
   margin: 20px;
-  a{
+  a {
     text-decoration: none;
     margin: 0 8px;
     color: #192f01;
