@@ -55,6 +55,7 @@
   }
   button {
     border-radius: 5px;
+    color: #122441;
     border: none;
     padding: 7px;
     font-size: large;
@@ -62,12 +63,10 @@
     width: 150px;
     margin: 20px;
     box-shadow: 2px 2px 2px #192f01;
-    background: linear-gradient(to bottom right, #ded369,80%, #192f01);
+    background: #AEAEB0;
     &:hover{
-        box-shadow: 5px 5px 5px #192f01;
+        box-shadow: 5px 5px 5px #122441;
         transform: translateY(2px);
-        color:#192f01;
-      
       }
   }
 }
@@ -86,15 +85,16 @@ form {
     border-radius: 5px;
     padding: 7px;
     font-size: large;
-     font-weight: bold;
+    font-weight: bold;
+    color:white;
     width: 150px;
     margin: auto;
-    box-shadow: 2px 2px 2px #192f01;
-    background: linear-gradient(to bottom right,#192f01, 80%,#ded369,);
+    box-shadow: 2px 2px 2px #AEAEB0;
+    background: #122441;
     &:hover{
-        box-shadow: 5px 5px 5px #192f01;
+        box-shadow: 5px 5px 5px #122441;
         transform: translateY(2px);
-        color:  #ded369;
+       
       
       }
   

@@ -110,14 +110,15 @@
 .forum-btn{
  width: 180px;
  margin: 10px;
- padding: 5px;
+ padding: 10px;
  border: none;
+ color:#AEAEB0 ;
  border-radius: 10px;
- background: linear-gradient(to bottom right,#192f01, #ded369);
+ background: #122441;
  font-weight: bolder;
- box-shadow: 2px 2px 2px #192f01;
+ box-shadow: 2px 2px 2px #AEAEB0;
   &:hover{
-    box-shadow: 5px 5px 5px #192f01;
+    box-shadow: 5px 5px 5px #AEAEB0;
     transform: translateY(2px);
   
   }

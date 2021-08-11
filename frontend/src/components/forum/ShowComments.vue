@@ -166,7 +166,7 @@ export default {
   padding: 5px;
   font-size: small;
   border-radius: 5px;
-  background-color: rgba(222, 211, 105, 0.3);
+  background-color: rgba(174, 174, 176, 0.3);
 }
 
 .editor {
@@ -176,7 +176,9 @@ export default {
 .add-comment {
   text-align: center;
   p{
-      color: #192f01;
+      color: #122441;
+      font-style: italic;
+      text-align: left;
   }
   button{
     border: none;
@@ -185,8 +187,8 @@ export default {
     border-top: 3px solid #f2f2f2;
     padding: 5px;
     &:hover {
-      border-top: 3px solid #192f01;
-      color: #192f01;
+      border-top: 3px solid #122441;
+      color: #122441;
     }
   }
 }
@@ -201,8 +203,8 @@ export default {
     border-top: 3px solid #f2f2f2;
     padding: 5px;
     &:hover {
-      border-top: 3px solid #192f01;
-      color: #192f01;
+      border-top: 3px solid #122441;
+      color: #122441;
     }
   }
 }
@@ -223,18 +225,20 @@ export default {
 }
 
 .annuler {
-  background: linear-gradient(to bottom right, #e0475b, 80%, #ded369);
-  &:hover {
-    box-shadow: 5px 5px 5px #e0475b;
-    transform: translateY(2px);
-  }
+   background: #122441;
+    color: #D1515A;
+    &:hover {
+      box-shadow: 5px 5px 5px #D1515A;
+      transform: translateY(2px);
+    }
 }
 
 .modifier {
-  background: linear-gradient(to bottom right, #192f01, 80%, #ded369);
-  &:hover {
-    box-shadow: 5px 5px 5px #192f01;
-    transform: translateY(2px);
-  }
+  color: #122441;
+    background: #AEAEB0;
+    &:hover{
+        box-shadow: 5px 5px 5px #122441;
+        transform: translateY(2px);
+      }
 }
 </style>

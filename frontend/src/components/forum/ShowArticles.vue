@@ -62,16 +62,16 @@
 .articles{
   text-align: justify;
   background-color: white;
-  box-shadow: -3px 2px 5px  grey;
+  box-shadow: -3px 2px 5px  #D1515A;
   padding: 10px;
   margin: 20px 0;
   h1{
-    color: #192f01;
+    color: #D1515A;
     font-size: 25px;
-    border-bottom: 2px solid #192f01;
+    border-bottom: 2px solid #D1515A;
   }
  em{
-   color:#03224c;
+   color:grey;
    font-size: small;
  }
 }
@@ -89,8 +89,8 @@
     border-top: 3px solid #F2F2F2;
     padding: 5px;
     &:hover{
-      border-top: 3px solid #192f01;
-      color:#192f01 ;
+      border-top: 3px solid #122441;
+      color:#122441 ;
     }
   }
 

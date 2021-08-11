@@ -12,7 +12,8 @@
 <style lang="scss">
 
 body{
-  background-color: #192f01;
+  background-color: #122441;
+  margin-top: 40px;
 }
 
 #nav{
@@ -22,7 +23,8 @@ body{
   a {
     text-decoration: none;
     margin: 0 8px;
-    color: #192f01;
+    color: #122441;
+;
     font-weight: bold;
   }
 }

@@ -8,12 +8,12 @@
         <div v-else>
           <label for="title">Titre :</label><br />
           <input type="text" v-model="article.title" id="title" />
+        
+          
         </div>
       </div>
       <div v-if="addSharedArticle" class="sharedArticle">
-        <h1 class="sharedArticle_title">
-          
-        </h1>
+        <h1 class="sharedArticle_title"></h1>
       </div>
       <div class="form-div">
         <label for="content">Contenu :</label><br />
@@ -27,20 +27,10 @@
       </div>
       <div class="form-div-btn">
         <div v-if="edit">
-          <input
-            type="submit"
-            value="Éditer"
-            class="submit"
-            @click.prevent="update"
-          />
+          <input type="submit" value="Éditer" class="submit" @click.prevent="update"/>
         </div>
         <div v-else>
-          <input
-            type="submit"
-            value="Publier"
-            class="submit"
-            @click.prevent="publish"
-          />
+          <input type="submit" value="Publier" class="submit" @click.prevent="publish" />
         </div>
         <button class="button" @click="cancelPublishRequest">Annuler</button>
       </div>
@@ -89,20 +79,22 @@ export default {
     border: none;
     border-radius: 10px;
     font-weight: bolder;
-    box-shadow: 2px 2px 2px #192f01;
+    box-shadow: 2px 2px 2px #122441;
   }
 
   .submit {
-    background: linear-gradient(to bottom right, #192f01, 80%, #ded369);
-    &:hover {
-      box-shadow: 5px 5px 5px #192f01;
-      transform: translateY(2px);
-    }
+    color: #122441;
+    background: #AEAEB0;
+    &:hover{
+        box-shadow: 5px 5px 5px #122441;
+        transform: translateY(2px);
+      }
   }
   button {
-    background: linear-gradient(to bottom right, #e0475b, 80%, #ded369);
+    background: #122441;
+    color: #D1515A;
     &:hover {
-      box-shadow: 5px 5px 5px #e0475b;
+      box-shadow: 5px 5px 5px #D1515A;
       transform: translateY(2px);
     }
   }

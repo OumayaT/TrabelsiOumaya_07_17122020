@@ -16,6 +16,10 @@ const Article = sequelize.define('Article', {
         type: DataTypes.STRING,
         allowNull: false
     },
+    imageUrl: {
+        type: DataTypes.STRING,
+        allowNull:true
+    },
     sharedArticle_id: {
         type: DataTypes.INTEGER
     },

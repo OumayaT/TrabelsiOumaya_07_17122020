@@ -1,6 +1,7 @@
 const express = require('express');
 const articlesCtrl = require('../controllers/articles');
 const auth = require('../middleware/auth');
+const multer = require("../middleware/multer-config");
 
 // Utilisation d'un router
 const router = express.Router();
@@ -11,9 +12,9 @@ router.get('/:id', auth, articlesCtrl.getArticleById);
 router.get('/date/:date', auth, articlesCtrl.getArticlesByDate);
 router.get('/author/:author', auth, articlesCtrl.getArticlesByAuthor);
 router.get('/:date/:author', auth, articlesCtrl.searchArticles);
-router.post('/', auth, articlesCtrl.createArticle);
-router.put('/', auth, articlesCtrl.updateArticle);
-router.delete('/', auth, articlesCtrl.deleteArticle);
+router.post('/', auth, multer, articlesCtrl.createArticle);
+router.put('/', auth, multer, articlesCtrl.updateArticle);
+router.delete('/', auth, multer,articlesCtrl.deleteArticle);
 
 
 

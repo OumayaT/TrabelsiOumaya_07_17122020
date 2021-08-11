@@ -68,9 +68,9 @@
  }
 
   .button-delete{
-    background-color: black;
-    color: red;
-    box-shadow: 2px 2px 2px red;
+    background-color: #D1515A;
+    color: #122441;
+    box-shadow: 2px 2px 2px #122441;
      &:hover{
         box-shadow: 5px 5px 5px red;
         transform: translateY(2px);
@@ -79,10 +79,11 @@
   }
  .btn-logout {
     
-    background: linear-gradient(to bottom right, #e0475b, 80%, #ded369);
-    box-shadow: 2px 2px 2px #192f01;
+    background: #122441;
+    color: white;
+    box-shadow: 2px 2px 2px #AEAEB0;
     &:hover {
-      box-shadow: 5px 5px 5px #e0475b;
+      box-shadow: 5px 5px 5px #D1515A;
       transform: translateY(2px);
     }
  }

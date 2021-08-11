@@ -40,7 +40,7 @@ header {
   justify-content: center;
 }
 #app {
-  background-color:#F8EFD5;
+  background-color:WHITE;
   max-width: 900px;
   margin: auto;
   padding: 5px;
@@ -57,22 +57,23 @@ main,
 footer {
   text-align: center;
   font-style: italic;
-  color: #192f01;
+  color: #022E51;
   h1 {
     font-size: 1.7rem;
     margin: 25px 0;
   }
    a {
-    color: black;
+    color: white;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     padding: 8px;
     font-size: x-large;
-    background: linear-gradient(to bottom right,#192f01, 30%,#ded369,);
-    box-shadow: 2px 2px 2px #192f01;
+    background: linear-gradient(to bottom right, #122441, 90%, #D1515A);
+    box-shadow: 2px 2px 2px #D1515A;
     &:hover{
-        box-shadow: 5px 5px 5px #192f01;
+        box-shadow: 5px 5px 5px #122441;
+        color: #D1515A;
       }
     
 

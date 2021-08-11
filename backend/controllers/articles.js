@@ -72,6 +72,7 @@ exports.createArticle = (req, res) => {
         title: req.body.title,
         content: req.body.content,
         author: req.body.author,
+        imageUrl:req.body.imageUrl,
         sharedArticle_id: req.body.sharedArticleId ? req.body.sharedArticleId : null,
         sharedArticle_title: req.body.sharedArticleTitle ? req.body.sharedArticleTitle : null
     };
