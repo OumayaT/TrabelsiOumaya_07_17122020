@@ -6,6 +6,20 @@ NodeJs + express + sequelize
 Mysql
 
 
+
+# Base de données #
+
+Se connecter au serveur MySql de votre choix.
+Exécuter la commande: CREATE DATABASE groupomania;
+Créer un utilisateur de votre choix et lui attribuer un mot de passe en exécutant les commandes comme suit: 
+
+
+
+`CREATE USER 'NameUSER' IDENTIFIED BY 'PASSWORDuser';` 
+
+`GRANT ALL ON Groupomania.* TO 'USER';`
+
+
 # Frontend #
 
 Ouvrir le dossier Frontend dans le terminal de votre éditeur puis exécuter la commande:
@@ -22,13 +36,13 @@ si le navigateur ne s'ouvre pas automatiquement allez à :
 # Backend #
 DANS LE DOSSIER BACKEND
 Ouvrez le fichier " .env.initial " : vous devez assigner des valeurs aux 3 variables suivantes:
-### DB_NAME =   ###
+### DB_NAME =   ### ( nom de votre base de données)
 ### USER =    ###
 ### PASSWORD =  ###
 ### TOKEN_SECRET = ###
 
 
-DB_NAME:  nom de votre base de données. 
+DB_NAME: 
 USER: nom d'utilisateur
 PASSWORD : mot de passe utilisateur
 TKN_SECRET = variable de votre choix.
@@ -43,7 +57,5 @@ puis
 
 `npm start ou nodemon serve`
 
-# Base de données #
 
-Se connecter au serveur MySql de votre choix. Exécuter la commande: CREATE DATABASE groupomania;
 

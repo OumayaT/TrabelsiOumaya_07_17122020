@@ -1,4 +1,4 @@
-const { DataTypes } = require('sequelize');
+const { DataTypes, Sequelize } = require('sequelize');
 const sequelize = require('../config/sequelize-config');
 
 // Création du modèle 'Article'
@@ -17,8 +17,8 @@ const Article = sequelize.define('Article', {
         allowNull: false
     },
     imageUrl: {
-        type: DataTypes.STRING,
-        allowNull:true
+        type: Sequelize.STRING,
+      
     },
     sharedArticle_id: {
         type: DataTypes.INTEGER

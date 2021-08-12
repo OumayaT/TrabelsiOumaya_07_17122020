@@ -8,8 +8,6 @@
         <div v-else>
           <label for="title">Titre :</label><br />
           <input type="text" v-model="article.title" id="title" />
-        
-          
         </div>
       </div>
       <div v-if="addSharedArticle" class="sharedArticle">
@@ -17,13 +15,7 @@
       </div>
       <div class="form-div">
         <label for="content">Contenu :</label><br />
-        <textarea
-          id="content"
-          v-model="article.content"
-          rows="20"
-          cols="100"
-          maxlength="20000"
-        ></textarea>
+        <textarea id="content"  v-model="article.content" rows="20" cols="100" maxlength="20000"></textarea>
       </div>
       <div class="form-div-btn">
         <div v-if="edit">
@@ -40,7 +32,6 @@
 
 <script>
 import { mapState, mapActions } from "vuex";
-
 export default {
   name: "NewArticle",
   props: {
@@ -58,6 +49,7 @@ export default {
   },
   methods: {
     ...mapActions(["publish", "update"]),
+
   },
 };
 </script>
