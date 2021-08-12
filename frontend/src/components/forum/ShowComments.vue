@@ -160,13 +160,15 @@ export default {
 .comment {
   border-top: 2px solid rgba(222, 211, 105, 0.3);
   margin: 20px 0;
+
 }
 .comment-txt {
-  border: 1px solid grey;
+  border: none;
   padding: 5px;
   font-size: small;
   border-radius: 5px;
-  background-color: rgba(174, 174, 176, 0.3);
+  background-color:rgba(209, 81, 90, 0.2);
+    box-shadow: 1px 1px 1px #122441;
 }
 
 .editor {

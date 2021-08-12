@@ -15,10 +15,7 @@
 body{
   background-color: #122441;
   margin-top: 10px;
-  @media (min-width: 600px) {
-  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
-  transform: translateY(-50%); 
-  }
+ 
 }
 
 #nav{

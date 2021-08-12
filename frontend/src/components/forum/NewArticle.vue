@@ -7,7 +7,7 @@
         </div>
         <div v-else>
           <label for="title">Titre :</label><br />
-          <input type="text" v-model="article.title" id="title" />
+           <input type="text" v-model="article.title" id="title" />
         </div>
       </div>
       <div v-if="addSharedArticle" class="sharedArticle">

@@ -66,7 +66,7 @@
 .articles{
   text-align: justify;
   background-color: white;
-  box-shadow: 0px 3px 3px 3px #D1515A;
+  box-shadow: 0px 2px 2px 2px #D1515A;
   padding:10px;
   margin: 20px 0;
   border-radius: 25px;

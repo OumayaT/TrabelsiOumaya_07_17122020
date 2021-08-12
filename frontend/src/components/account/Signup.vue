@@ -25,10 +25,6 @@
         <p class="info">NB : Le mot de passe doit contenir au minimum 8 caractères, une lettre majuscule, 
         une lettre minuscule, un chiffre et ne doit pas contenir de symbole ni d'espace.</p>
       </div>
-     
-      
-      
-      
       <div class="form-div">
         <input type="submit" value="Inscription" class="submit" @click.prevent="signup">
       </div>
