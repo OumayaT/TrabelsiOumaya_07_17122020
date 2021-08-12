@@ -49,7 +49,6 @@ export default {
   },
   methods: {
     ...mapActions(["publish", "update"]),
-
   },
 };
 </script>
@@ -58,7 +57,6 @@ export default {
 #title {
   width: 200px;
 }
-
 .form-div-btn {
   display: flex;
   flex-direction: row;
@@ -73,7 +71,6 @@ export default {
     font-weight: bolder;
     box-shadow: 2px 2px 2px #122441;
   }
-
   .submit {
     color: #122441;
     background: #AEAEB0;
@@ -91,5 +88,4 @@ export default {
     }
   }
 }
-
 </style>

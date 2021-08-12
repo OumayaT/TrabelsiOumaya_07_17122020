@@ -1,14 +1,20 @@
 <template>
   <div class="forum">
-    <div v-if="main">
-      <h1>Bienvenue sur le Forum ! </h1>
+    <div v-if="main" >
+      <div class="title_forum">
+         <h1>Bienvenue sur le Forum ! </h1>
+      </div>
+     
       <p> Partager avec vos collègues des articles sur des sujets qui vous intéressent.</p>
       <p class="get-charter">NB : Avant de participer, merci de lire la <span class="get-charter--link" @click="getCharter">Charte</span> <br>
       indiquant les règles de convivialité à respecter.</p>
-      <button class="forum-btn" @click="newArticle">Publier un article</button>
-      <button class="forum-btn" @click="showUserArticles">Mes articles</button>
-      <button class="forum-btn" @click="readLatestArticles">Articles récents</button>
-      <button class="forum-btn" @click="findArticle">Rechercher un article</button>
+      <div class="container_btn">
+        <button class="forum-btn" @click="newArticle">Publier un article</button>
+        <button class="forum-btn" @click="showUserArticles">Mes articles</button>
+        <button class="forum-btn" @click="readLatestArticles">Articles récents</button>
+        <button class="forum-btn" @click="findArticle">Rechercher un article</button>
+      </div>
+
 
       <div v-if="publication && connected">
         <NewArticle
@@ -92,11 +98,24 @@
 </script>
 
 <style lang="scss">
+
 .forum{
- max-width: 500px;
-  margin: auto;
-  font-size: large;
+  font-size:larger;
   text-align: center;
+  .title_forum{
+    color: #D1515A;
+  }
+}
+
+.container_btn{
+  @media(min-width: 600px){
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin: auto;
+    max-width: 400px;
+    margin: auto;
+  }
+
 }
 
 .get-charter{
@@ -112,7 +131,8 @@
  margin: 10px;
  padding: 10px;
  border: none;
- color:#AEAEB0 ;
+ 
+ color: white;
  border-radius: 10px;
  background: #122441;
  font-weight: bolder;

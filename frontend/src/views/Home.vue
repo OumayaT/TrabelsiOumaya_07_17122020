@@ -44,14 +44,17 @@ header {
   max-width: 900px;
   margin: auto;
   padding: 5px;
+  border-radius: 20px;
+  
+
 }
 
 .logo {
   min-width: 260px;
   min-height: 100px;
   margin: 5px;
-  
 }
+
 
 main,
 footer {

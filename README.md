@@ -38,18 +38,16 @@ si le navigateur ne s'ouvre pas automatiquement allez à :
 `http://localhost:8080/`
 
 # Backend #
+
 DANS LE DOSSIER BACKEND
 Ouvrez le fichier " .env.initial " : vous devez assigner des valeurs aux 3 variables suivantes:
-### DB_NAME =   ### ( nom de votre base de données)
-### USER =    ###
-### PASSWORD =  ###
-### TOKEN_SECRET = ###
+
+## DB_NAME =   ##          (nom de votre base de données)
+## USER =    ##            (nom d'utilisateur)
+## PASSWORD =  ##          (mot de passe utilisateur)
+## TOKEN_SECRET = ##       (variable de votre choix)
 
 
-DB_NAME: 
-USER: nom d'utilisateur
-PASSWORD : mot de passe utilisateur
-TKN_SECRET = variable de votre choix.
 
 Renommer ce dossier " .env " à la place de " .env.initial ".
 

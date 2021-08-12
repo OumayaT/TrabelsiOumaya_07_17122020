@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container_articles">
     <div v-for="item in articles" :key="item.id" class="articles">
       <h1>{{ item.title }}</h1>
       <div v-if="item.author !== user.pseudo">
@@ -59,12 +59,18 @@
 </script>
 
 <style lang="scss">
+
+.container_articles{
+  padding: 5px;
+}
 .articles{
   text-align: justify;
   background-color: white;
-  box-shadow: -3px 2px 5px  #D1515A;
-  padding: 10px;
+  box-shadow: 0px 3px 3px 3px #D1515A;
+  padding:10px;
   margin: 20px 0;
+  border-radius: 25px;
+  
   h1{
     color: #D1515A;
     font-size: 25px;

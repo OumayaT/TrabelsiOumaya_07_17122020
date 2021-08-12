@@ -1,5 +1,8 @@
 <template>
   <div class="home-user">
+    <div class=logo_home>
+    <img src="../../assets/logo.svg" alt="Groupomania Logo"  />
+    </div>
     <p >Bonjour <span>{{ user.pseudo }} ! </span><br>
     Vous êtes désormais connecté.<br>
     Vous pouvez dès à présent vous rendre sur le <span>Forum</span> afin d'échanger avec vos collègues en toute convivialité !</p>
@@ -54,20 +57,31 @@
   font-weight: medium;
   margin: auto;
   max-width: 600px;
-  padding: 30px;
+  padding: 20px;
+  .logo_home{
+    margin: auto;
+    border-bottom: 5px solid red;
+    @media (max-width: 600px){
+      border-bottom: 2px solid red;
+      img{
+        height: 50px;
+      } 
+    }
+  }
+ 
   button{
     border-radius: 5px;
     padding: 10px;
     font-size: medium;
     font-weight: bold ;
     width: 200px;
-    margin: 20px;
+    margin: 15px;
     border: none;
   }
 
- }
+}
 
-  .button-delete{
+.button-delete{
     background-color: #D1515A;
     color: #122441;
     box-shadow: 2px 2px 2px #122441;
