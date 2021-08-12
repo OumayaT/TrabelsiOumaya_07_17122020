@@ -10,7 +10,11 @@ Mysql
 # Base de données #
 
 Se connecter au serveur MySql de votre choix.
-Exécuter la commande: CREATE DATABASE groupomania;
+
+Exécuter la commande: 
+
+`CREATE DATABASE groupomania;` 
+
 Créer un utilisateur de votre choix et lui attribuer un mot de passe en exécutant les commandes comme suit: 
 
 
